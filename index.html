@@ -9,12 +9,42 @@
 <body>
     <nav>
         <ul>
-            <li>Home</li>
-            <li>About</li>
-            <h1>Dragon Acorn Productions</h1>
-            <li>Products</li>
-            <li>Contact</li>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li style="float: right"><b>Dragon Acorn Production</b></li>
         </ul>
     </nav>
+
+    <div class="bg-container">
+        <h1>Dragon Acorn Productions</h1>
+        <code>It's an honest mistake not to choose us first.</code>
+    </div>
+
+    <div class="hd1-container">
+        <h1>Amazing Products, Amazing Support, Amazing things.</h1>
+        <p>Our development and support team is so neat, you won't regret buying products from us.
+            Along with that, our development ensures that you keep the ultimate customizablity while maintaining your professional stand.
+        </p>
+    </div>
+
+    <div class="hd2-container">
+        <h1>We are up and coming and were just that good ;)</h1>
+
+    </div>
+
+    <textarea>1 2 3 4 5 6 7 8 9</textarea>
+    <p id="log"></p>
+    <script type="text/javascript">
+        const textarea = document.querySelector('textarea');
+        const log = document.getElementById('log');
+
+        textarea.onscroll = logScroll;
+
+        function logScroll(e) {
+        log.textContent = `Scroll position: ${e.target.scrollTop}`;
+        }
+    </script>
 </body>
 </html>

@@ -7,7 +7,52 @@ body {
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
 
-    display: flex;
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+li b {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #0079c4;
+}
+
+div {
+    margin: 14px;
+    padding: 240px 240px;
+}
+
+div.hd1-container {
+    background-color: #0079c4;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+textarea {
+  width: 4rem;
+  height: 8rem;
+  font-size: 3rem;
 }
