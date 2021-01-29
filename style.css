@@ -1,7 +1,7 @@
 body {
     background-color: #404040;
     text-align: center;
-    font-family: 'sans-serif';
+    font-family: 'arial';
     font-size: medium;
     color: #ffffff
 }
@@ -45,14 +45,32 @@ div {
     padding: 240px 240px;
 }
 
+div.bg-container {
+    width: 50%;
+    position: relative;
+    display: inline-block;
+}
+
+div.bg-container::after {
+    display:block;
+    padding-top: 56.25%;
+    content: '';
+}
+
+.content {
+    position:absolute;
+}
+
 div.hd1-container {
     background-color: #0079c4;
     margin-left: 0;
     margin-right: 0;
 }
 
-textarea {
-  width: 4rem;
-  height: 8rem;
-  font-size: 3rem;
+
+
+div.item {
+    padding: 0%;
+    margin: 5px;
+    display: inline-block;
 }

@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Dragon Acorn Production</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Dragon Acorn Productions</title>
 </head>
 <body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <nav>
         <ul>
             <li><a class="active" href="index.html">Home</a></li>
@@ -23,28 +28,20 @@
     </div>
 
     <div class="hd1-container">
-        <h1>Amazing Products, Amazing Support, Amazing things.</h1>
-        <p>Our development and support team is so neat, you won't regret buying products from us.
-            Along with that, our development ensures that you keep the ultimate customizablity while maintaining your professional stand.
-        </p>
+        <div class="content">
+            <h1>Amazing Products, Amazing Support, Amazing things.</h1>
+            <p>Our development and support team is so neat, you won't regret buying products from us.
+                Along with that, our development ensures that you keep the ultimate customizablity while maintaining your professional stand.
+            </p>
+        </div>
     </div>
 
     <div class="hd2-container">
-        <h1>We are up and coming and were just that good ;)</h1>
-
+        <div class="item" data-aos="fade-up" data-aos-delay="200"><h1>Were also just</h1></div>
+        <div class="item" data-aos="fade-up" data-aos-delay="300" style="font-size: 20px;" ><h1>that</h1></div>
+        <div class="item" data-aos="fade-up" data-aos-delay="400" style="font-size: 30px;"><h1>good</h1></div>
+        <div class="item" data-aos="fade-up" data-aos-delay="500" style="font-size: 40px;"><h1>;)</h1></div>
     </div>
 
-    <textarea>1 2 3 4 5 6 7 8 9</textarea>
-    <p id="log"></p>
-    <script type="text/javascript">
-        const textarea = document.querySelector('textarea');
-        const log = document.getElementById('log');
-
-        textarea.onscroll = logScroll;
-
-        function logScroll(e) {
-        log.textContent = `Scroll position: ${e.target.scrollTop}`;
-        }
-    </script>
 </body>
 </html>
